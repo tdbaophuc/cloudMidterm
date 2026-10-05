@@ -1,0 +1,21 @@
+{
+  "name": "midterm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^2.3.0",
+    "connect-mongodb-session": "^5.0.0",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "express-handlebars": "^8.0.1",
+    "express-session": "^1.19.0",
+    "mongoose": "^9.10.4"
+  }
+}

@@ -1,0 +1,15 @@
+<h2>Thêm Sách Mới</h2>
+<form action="/add" method="POST">
+    Mã SP (Tiền tố {{prefixMSSV}}): <input type="text" name="maSP" required><br>
+    Tên Sách: <input type="text" name="tenSach" required><br>
+    Giá Gốc: <input type="number" name="giaGoc" required><br>
+    <button type="submit">Thêm Sách</button>
+</form>
+
+<h2>Danh sách Sách</h2>
+<ul>
+    {{#each books}}
+        <li>[{{this.maSP}}] {{this.tenSach}} - Giá gốc: {{this.giaGoc}} - Giá sau thuế: {{this.giaSauThue}}</li>
+    {{/each}}
+</ul>
+<p>Số lần xem trang (Session Check): {{sessionViews}}</p>
